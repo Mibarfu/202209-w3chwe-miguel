@@ -1,0 +1,5 @@
+node_modules
+js/
+.DS_Store
+pokemon-logo.svg
+README.md
