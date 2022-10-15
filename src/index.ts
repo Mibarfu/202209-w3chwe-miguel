@@ -1,3 +1,8 @@
-let x = 0;
+import PokeApi from "./PokeApi/PokeApi.js";
 
-x++;
+const apiUrl = "https://pokeapi.co/api/v2";
+const apiEndpoint = "pokemon";
+
+const myConexion = new PokeApi(apiUrl, apiEndpoint);
+
+console.log(await myConexion.request(1));
