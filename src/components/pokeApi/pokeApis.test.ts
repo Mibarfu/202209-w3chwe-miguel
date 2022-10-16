@@ -1,6 +1,6 @@
 import type PokeData from "./types";
 import "isomorphic-fetch";
-import pokeApi from "./XpokeApi";
+import pokeApi from "./pokeApi";
 
 describe("Given a PokeApi component", () => {
   describe("When it`s instantiated and makes the resource request: 'https://pokeapi.co/api/v2/pokemon/1", () => {
