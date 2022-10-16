@@ -1,5 +1,5 @@
-import PokeApi from "./components/XpokeApi/XpokeApi.js";
-import type PokeData from "./components/XpokeApi/XpokeApi.js";
+import PokeApi from "./components/pokeApi/pokeApi.js";
+import type PokeData from "./components/pokeApi/pokeApi.js";
 import PokemonCardPreview from "./components/PokemonCardPreview/PokemonCardPreview.js";
 import getPokemonList from "./components/getPokemonList/getPokemonList.js";
 import GetPokemonList from "./components/getPokemonList/types.js";
