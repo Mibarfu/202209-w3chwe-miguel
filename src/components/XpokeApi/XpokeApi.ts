@@ -1,4 +1,4 @@
-import type PokeData from "./Xtypes";
+import type PokeData from "./types";
 
 const pokeApi = async (apiUrl: string) => {
   try {
