@@ -87,6 +87,9 @@ button {
   color: rgb(175, 187, 222);
   text-shadow: black 5px 5px 10px;
 }
+.pokemon-card-preview:hover .pokemon-window__image {
+  transform: scale(130%);
+}
 
 .pokemon-window {
   position: relative;
@@ -98,6 +101,7 @@ button {
 }
 .pokemon-window__image {
   position: absolute;
+  transition: all 0.5s;
 }
 
 .list-pokemon {
