@@ -1,4 +1,4 @@
-.pokemon-initial {
+.pokemon-card-preview {
   display: flex;
   width: 200px;
   height: 340px;
@@ -18,7 +18,7 @@
 
   &__name {
     position: relative;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: "Pokemon Hollow";
     color: white;
     font-weight: 100;
