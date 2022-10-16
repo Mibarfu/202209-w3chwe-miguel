@@ -48,6 +48,18 @@ button {
   cursor: pointer;
 }
 
+@font-face {
+  font-family: "Pokemon Solid";
+  src: url("../css/fonts/Pokemon Solid.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Pokemon Hollow";
+  src: url("../css/fonts/Pokemon Hollow.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
 .pokemon-initial {
   display: flex;
   width: 200px;
@@ -56,22 +68,24 @@ button {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(90deg, rgb(155, 155, 174) 0%, rgb(137, 137, 175) 59%, rgb(122, 135, 150) 91%);
+  background: linear-gradient(59deg, rgb(55, 53, 93) 0%, rgb(141, 141, 189) 59%, rgb(122, 135, 150) 77%);
+  box-shadow: 7px 6px 13px -3px rgba(0, 0, 0, 0.75);
   border-radius: 10px;
   cursor: pointer;
 }
 .pokemon-initial__name {
   position: relative;
-  font-size: 2rem;
-  color: rgb(16, 103, 197);
-  background-color: rgb(241, 230, 113);
-  padding: 7px 20px;
-  line-height: 2rem;
-  border-radius: 10px;
+  font-size: 1.5rem;
+  font-family: "Pokemon Hollow";
+  color: white;
+  font-weight: 100;
+  text-shadow: black 5px 5px 10px;
 }
 .pokemon-initial__id {
-  color: blueviolet;
-  font-size: 3rem;
+  font-size: 4rem;
+  font-family: "Pokemon Solid";
+  color: rgb(175, 187, 222);
+  text-shadow: black 5px 5px 10px;
 }
 
 .pokemon-window {
