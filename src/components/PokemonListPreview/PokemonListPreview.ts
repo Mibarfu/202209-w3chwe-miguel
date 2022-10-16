@@ -2,7 +2,7 @@ import Component from "../Component/Component.js";
 import getPokemonList from "../getPokemonList/getPokemonList.js";
 import PokemonCardPreview from "../PokemonCardPreview/PokemonCardPreview.js";
 import pokeApi from "../XpokeApi/XpokeApi.js";
-import type PokeData from "../XpokeApi/Xtypes.js.js";
+import type PokeData from "../XpokeApi/types.js";
 
 class PokemonListPreview extends Component {
   constructor(
