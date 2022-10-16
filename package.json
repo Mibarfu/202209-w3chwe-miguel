@@ -9,7 +9,7 @@
     "test": "jest",
     "test:dev": "npm test -- --watchAll",
     "prepare": "husky install",
-    "build-css": "sass src/scss/styles.scss public/css/styles.css",
+    "build-css": "sass src/sass/styles.scss public/css/styles.css",
     "build-css:dev": "npm run build-css -- -w"
   },
   "keywords": [],
