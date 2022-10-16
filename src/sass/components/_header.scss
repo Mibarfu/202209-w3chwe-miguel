@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  height: 80px;
+  border-radius: 10px;
+
+  background: linear-gradient(
+    59deg,
+    rgb(106, 104, 160) 0%,
+    rgba(141, 141, 189, 1) 59%,
+    rgba(122, 135, 150, 1) 77%
+  );
+
+  box-shadow: 7px 6px 10px -3px rgba(0, 0, 0, 0.75);
+  text-shadow: black 5px 5px 10px;
+
+  .information-controls__count {
+    font-size: 2rem;
+    font-family: "Pokemon Solid";
+    color: aliceblue;
+    letter-spacing: 0.4rem;
+    line-height: 1.6rem;
+  }
+  .button-controls {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+}

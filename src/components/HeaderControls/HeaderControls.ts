@@ -8,7 +8,7 @@ class HeaderControls extends Component {
   limit = 5;
 
   constructor(parentElement: HTMLElement) {
-    super(parentElement, "header-controls", "header");
+    super(parentElement, "header", "header");
   }
 
   async render() {
@@ -22,16 +22,18 @@ class HeaderControls extends Component {
 
     this.domElement.innerHTML = `
       <section class="information-controls">
-        <span class="count-pokemon">${listPokemon.count} Pokemons</span>
-        <button class="previous-button"></button>
-        <button class="next-button"></button>
+        <span class="information-controls__count">${listPokemon.count} Pokemon's</span>
+      </section>
+      <section class="button-controls">
+        <button class="buttons button-controls__previous">previous</button>
+        <button class="buttons button-controls__next">next</button>
       </section>
     `;
   }
 
   async startListener(parentElement: HTMLElement, offset: number) {
     document
-      .querySelector(".next-button")
+      .querySelector(".button-controls__next")
       .addEventListener("click", async () => {
         offset += 5;
 
@@ -47,7 +49,7 @@ class HeaderControls extends Component {
       });
 
     document
-      .querySelector(".previous-button")
+      .querySelector(".button-controls__previous")
       .addEventListener("click", async () => {
         if (offset >= 5) {
           offset -= 5;
