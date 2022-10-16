@@ -60,7 +60,7 @@ button {
   font-style: normal;
   font-weight: normal;
 }
-.pokemon-initial {
+.pokemon-card-preview {
   display: flex;
   width: 200px;
   height: 340px;
@@ -73,15 +73,15 @@ button {
   border-radius: 10px;
   cursor: pointer;
 }
-.pokemon-initial__name {
+.pokemon-card-preview__name {
   position: relative;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: "Pokemon Hollow";
   color: white;
   font-weight: 100;
   text-shadow: black 5px 5px 10px;
 }
-.pokemon-initial__id {
+.pokemon-card-preview__id {
   font-size: 4rem;
   font-family: "Pokemon Solid";
   color: rgb(175, 187, 222);
