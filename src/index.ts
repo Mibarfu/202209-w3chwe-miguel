@@ -2,12 +2,5 @@ import PokeApi from "./components/PokeApi/PokeApi.js";
 import type PokeData from "./components/PokeApi/types.js";
 import PokemonCardPreview from "./components/PokemonCardPreview/PokemonCardPreview.js";
 import getPokemonList from "./components/getPokemonList/getPokemonList.js";
-
-const apiUrl = "https://pokeapi.co/api/v2";
-const apiEndpoint = "pokemon";
-
-const parentElement = document.querySelector(".root");
-
-const pokemon = new PokeApi(apiUrl, apiEndpoint);
-
-const pokemonResponse = (await pokemon.request(1)) as PokeData;
+import GetPokemonList from "./components/getPokemonList/types.js";
+import PokemonListPreview from "./components/PokemonListPreview/PokemonListPreview.js";

@@ -1,14 +1,11 @@
 import type PokeData from "./types.js";
 
 class PokeApi {
-  constructor(
-    private readonly apiUrl: string,
-    private readonly apiEndPoint: string
-  ) {}
+  constructor(private readonly apiUrl: string) {}
 
-  async request(id: number) {
+  async request() {
     try {
-      const response = await fetch(`${this.apiUrl}/${this.apiEndPoint}/${id}`);
+      const response = await fetch(`${this.apiUrl}`);
       const body = (await response.json()) as PokeData;
 
       const data = {
