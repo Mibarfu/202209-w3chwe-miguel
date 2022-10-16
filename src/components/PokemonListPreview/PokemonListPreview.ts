@@ -22,9 +22,13 @@ class PokemonListPreview extends Component {
 
     const listPokemon = await getPokemonList(this.url, this.offset, this.limit);
 
-    listPokemon.results.forEach(async (pokemon) => {
-      const pokemonResponse = (await pokeApi(pokemon)) as PokeData;
+    const listPokemonPromise = listPokemon.results.map(async (pokemon) =>
+      pokeApi(pokemon)
+    );
 
+    const pokemons = await Promise.all(listPokemonPromise);
+
+    pokemons.forEach((pokemonResponse: PokeData) => {
       const pokemonCard = new PokemonCardPreview(
         parentListaPokemon,
         pokemonResponse.id,
