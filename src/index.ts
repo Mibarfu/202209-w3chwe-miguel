@@ -1,6 +1,7 @@
 import PokeApi from "./components/PokeApi/PokeApi.js";
 import type PokeData from "./components/PokeApi/types.js";
 import PokemonCardPreview from "./components/PokemonCardPreview/PokemonCardPreview.js";
+import getPokemonList from "./components/getPokemonList/getPokemonList.js";
 
 const apiUrl = "https://pokeapi.co/api/v2";
 const apiEndpoint = "pokemon";
