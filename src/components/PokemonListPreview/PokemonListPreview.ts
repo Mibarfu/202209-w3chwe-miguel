@@ -1,8 +1,8 @@
 import Component from "../Component/Component.js";
 import getPokemonList from "../getPokemonList/getPokemonList.js";
 import PokemonCardPreview from "../PokemonCardPreview/PokemonCardPreview.js";
-import PokeApi from "../PokeApi/PokeApi.js";
-import type PokeData from "../PokeApi/types.js";
+import pokeApi from "../XpokeApi/XpokeApi.js";
+import type PokeData from "../XpokeApi/types.js";
 
 class PokemonListPreview extends Component {
   constructor(
@@ -23,8 +23,7 @@ class PokemonListPreview extends Component {
     const listPokemon = await getPokemonList(this.url, this.offset, this.limit);
 
     listPokemon.results.forEach(async (pokemon) => {
-      const pokemonr = new PokeApi(pokemon);
-      const pokemonResponse = (await pokemonr.request()) as PokeData;
+      const pokemonResponse = (await pokeApi(pokemon)) as PokeData;
 
       const pokemonCard = new PokemonCardPreview(
         parentListaPokemon,
