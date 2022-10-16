@@ -1,4 +1,7 @@
+@use "./components/root";
+@use "./components/header";
 @use "./components/reset";
 @use "./components/typography";
 @use "./components/pokemonCardPreview";
 @use "./components/pokemonListPreview";
+@use "./components/buttonsHeader";
